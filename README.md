@@ -102,15 +102,4 @@ Ibad Khan
 
 ---
 
-Let me know if you'd like me to add:
-- Badges (e.g., built with React, deployed on Vercel)
-- Screenshots
-- API endpoints section (for backend routes)
-
-
-
-
-
-
-
 
