@@ -12,7 +12,10 @@ function BestSeller() {
       if(products && products.length>0){
         const filterdProduct= products.filter((item)=> item.bestseller==true );
         setBestSeller(filterdProduct.slice(0,5)); 
-        setLoading(false);
+         const timer = setTimeout(()=>{
+    setLoading(false);
+   },500) 
+     return () => clearTimeout(timer);
       }else{
         setLoading(true);
       }

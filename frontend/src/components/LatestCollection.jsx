@@ -10,7 +10,11 @@ const LatestCollection = () => {
 useEffect(() => {
   if (products && products.length > 0) {
     setLatestCollection(products.slice(0, 10));
+   const timer = setTimeout(()=>{
     setLoading(false);
+   },500) 
+     return () => clearTimeout(timer);
+
   } else {
     setLoading(true);
   }
