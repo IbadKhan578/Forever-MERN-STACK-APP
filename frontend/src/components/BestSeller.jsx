@@ -6,9 +6,16 @@ import Productitem from './Productitem';
 function BestSeller() {
     const {products} = useContext(shopContext);
     const [bestSeller,setBestSeller] = useState([]);
+    const [loading , setLoading] = useState(true);
     useEffect(()=>{
+
+      if(products && products.length>0){
         const filterdProduct= products.filter((item)=> item.bestseller==true );
-        setBestSeller(filterdProduct.slice(0,5));
+        setBestSeller(filterdProduct.slice(0,5)); 
+        setLoading(false);
+      }else{
+        setLoading(true);
+      }
 
 
     },[products])
