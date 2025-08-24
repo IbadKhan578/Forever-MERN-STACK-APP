@@ -7,12 +7,14 @@ const LatestCollection = () => {
   const [latestCollection, setLatestCollection] = useState([]);
   const [loading,setLoading] = useState(true);
   const { products } = useContext(shopContext);
-  useEffect(() => {
+useEffect(() => {
+  if (products && products.length > 0) {
     setLatestCollection(products.slice(0, 10));
-      setLoading(false); // <-- set loading false when products arrive
-
-  }, [products]);
-
+    setLoading(false);
+  } else {
+    setLoading(true);
+  }
+}, [products]);
   return (
     <div className="my-10">
       <div className="text-center py-8 text-3xl">
