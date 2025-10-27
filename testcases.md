@@ -1,3 +1,19 @@
+
+
+
+requirements:
+
+User should be able to register with name, email, and password.
+
+User should be able to log in with valid credentials.
+
+Logged-in user should be able to create a new post/item.
+
+User should be able to view all posts/items.
+
+User should be able to log out successfully.
+
+
 | **Test Case ID** | **Scenario**                                | **Precondition**                     | **Steps**                                                                                        | **Expected Result**                                              | **Actual Result** | **Status** |
 | ---------------- | ------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- | ----------------- | ---------- |
 | **TC001**        | Verify user registration with valid details | App is open on Register page         | 1. Enter valid name, email, password<br>2. Click “Register”                                      | Account is created successfully and redirected to login page     | As expected       | ✅ Pass     |
