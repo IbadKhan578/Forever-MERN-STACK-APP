@@ -28,8 +28,8 @@ TC007	Verify empty cart behavior	Message “Your cart is empty” displayed	As e
 Total Test Cases	Passed	Failed	Pass Percentage
 7	7	0	100% ✅
 
-
-
+Test cases images:
+https://github.com/IbadKhan578/Forever-MERN-STACK-APP/tree/main/testCases_images
 
 Example:
 
